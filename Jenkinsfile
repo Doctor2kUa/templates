@@ -22,7 +22,7 @@ node {
 
      stage('Push image') {
 
-         docker.withRegistry('https://registry.hub.docker.com', 'docker') {
+         docker.withRegistry('https://registry.hub.docker.com', 'docker_ doctor2kkk') {
              app.push("${env.BUILD_NUMBER}")
              app.push("0.0.1")
          }
